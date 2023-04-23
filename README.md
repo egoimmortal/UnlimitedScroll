@@ -1,24 +1,18 @@
-# unlimited-scroll
+# Project Name(UnlimitedScroll)
 
-## Project setup
+## 專案啟動方式(Project setup)
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install(安裝相關套件)
+npm run serve(啟動專案)
+在輸入框中輸入要查詢的github account
 ```
 
-### Compiles and minifies for production
+### 專案打包(Compiles and minifies for production)
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Github Page 網址
 ```
-npm run lint
+https://egoimmortal.github.io/UnlimitedScroll/
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
