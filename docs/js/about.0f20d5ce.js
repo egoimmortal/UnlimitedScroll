@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkunlimited_scroll"]=self["webpackChunkunlimited_scroll"]||[]).push([[443],{4335:function(n,u,t){t.r(u),t.d(u,{default:function(){return d}});var e=t(3396);const r={class:"about"},s=(0,e._)("h1",null,"This is an about page",-1),i=[s];function l(n,u){return(0,e.wg)(),(0,e.iD)("div",r,i)}var a=t(89);const c={},o=(0,a.Z)(c,[["render",l]]);var d=o}}]);
+//# sourceMappingURL=about.0f20d5ce.js.map
