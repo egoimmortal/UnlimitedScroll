@@ -26,8 +26,6 @@ const reposList = ref<ReposType[]>([]);
 const unlimited = ref();
 
 function UpdateRepos(input: Promise<unknown>[] | undefined) {
-  console.log('input = ', input);
-
   if (typeof (input) !== 'object') {
     reposList.value = [];
   } else {
@@ -43,6 +41,7 @@ function UpdateRepos(input: Promise<unknown>[] | undefined) {
 
 async function SelectRepos() {
   reposList.value = [];
+  currentPage.value = 1;
 
   try {
     githubData.value = await Github.GetRepos(currentUser.value, currentPage.value);
@@ -64,15 +63,11 @@ async function AddRepos() {
 }
 
 function Scroll() {
-  // console.log(window);
   if (currentUser.value === '') return;
-  console.log(window.innerHeight);
-  console.log(window.scrollY);
-  console.log(unlimited.value.clientHeight);
+
   if (window.innerHeight + window.scrollY >= unlimited.value.clientHeight) {
     currentPage.value += 1;
     AddRepos();
-    console.log('currentPage.value = ', currentPage.value);
   }
 }
 

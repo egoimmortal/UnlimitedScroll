@@ -1,8 +1,8 @@
 <template>
   <div class="repos-parent">
-    <span>{{ data.name }}</span>
-    <span>{{ data.description }}</span>
-    <a :href="data.htmlUrl" target="_blank">{{ data.htmlUrl }}</a>
+    <span>{{ props.data.name }}</span>
+    <span>{{ props.data.description }}</span>
+    <a :href="props.data.htmlUrl" target="_blank">{{ props.data.htmlUrl }}</a>
   </div>
 </template>
 
